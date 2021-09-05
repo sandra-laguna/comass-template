@@ -19,7 +19,7 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   build: {},
-  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts"],
+  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", '@nuxtjs/color-mode'],
   modules: ["@nuxtjs/axios"],
   plugins: ["~/plugins/webhook"],
   content: {},

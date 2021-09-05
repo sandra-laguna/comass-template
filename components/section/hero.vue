@@ -46,18 +46,43 @@
 
 
 <style>
-#hero {
+
+.light-mode #hero {
+  background-image: url("./assets/images/hero_light.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position-x: right;
+  }
+
+.light-mode #hero h1,  .light-mode #hero button, .light-mode select, .dark-mode select{
+  color: #000;
+}
+
+.dark-mode #hero {
   background-image: url("./assets/images/hero.jpg");
   background-repeat: no-repeat;
   background-size: 55%;
   background-position-x: right;
 }
 
+.light-mode body {
+  background-color: #fff;
+  color: #ccc;
+}
+
+.dark-mode body {
+  background-color: #000;
+  color: #ebf4f1;
+}
+
 .btn span:first-child {
   transform: translateX(-101%);
   transition: transform 0.3s ease-in;
 }
+
 .btn:hover span {
   transform: translateX(0);
-}
+} 
+
 </style>

@@ -17,6 +17,15 @@
         </nuxt-link>
       </div>
 
+     
+     <div class="hidden lg:flex lg:flex-row lg:text-lg">
+      <select v-model="$colorMode.preference">
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
+
+
       <!-- Mobile -->
       <div class="flex flex-row items-center lg:hidden">
         <div class="relative h-full hover:cursor-pointer" @click="toggle">
@@ -80,3 +89,5 @@ export default {
   }
 };
 </script>
+
+

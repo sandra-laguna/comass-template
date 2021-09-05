@@ -1,7 +1,8 @@
 <template>
-  <div class="bg-black">
+  <div>
     <section-hero />
     <section-services />
+
   </div>
 </template>
 
@@ -9,9 +10,10 @@
 export default {
   head() {
     return {
-      title: "Tecnología, diseño y marketing | The Seed Squad",
+      title: "Cømass | Nuxt.js + TailwindCSS proyect",
       link: [{ rel: "canonical", hid: "canonical", href: `${this.$config.baseUrl}/` }]
     };
   }
 };
 </script>
+
