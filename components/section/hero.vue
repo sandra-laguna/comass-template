@@ -26,17 +26,17 @@
     </div>
     <div class="px-4 w-full flex flex-col gap-4 md:mt-20 lg:flex-row">
       <div class="cursor-pointer bg-primary px-12 py-10 lg:py-20">
-        <img class="h-12" src="@/assets/icon/chart.svg" alt="chart" />
+        <icon-chart class="h-12 text-white fill-current" src="@/assets/icon/chart.svg" />
         <h2 class="font-extrabold text-2xl my-8">Future Vision.</h2>
         <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
       </div>
       <div class="cursor-pointer bg-secondary px-12 py-10 lg:py-20">
-        <img class="h-12" src="@/assets/icon/rocket.svg" alt="rocket" />
+        <icon-rocket class="h-12 text-white fill-current" src="@/assets/icon/rocket.svg" />
         <h2 class="font-extrabold text-2xl mt-12 mb-8">Product Design.</h2>
         <p>There are many variations of passages of available, but the majority alteration in some form.</p>
       </div>
       <div class="cursor-pointer bg-secondary px-12 py-10 lg:py-20">
-        <img class="h-12" src="@/assets/icon/pie-chart.svg" alt="pie-chart" />
+        <icon-pie-chart class="h-12 text-white fill-current" src="@/assets/icon/pie-chart.svg"/>
         <h2 class="font-extrabold text-2xl mt-12 mb-8">Inovative Solutions.</h2>
         <p>The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
       </div>
