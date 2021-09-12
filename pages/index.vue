@@ -2,6 +2,7 @@
   <div>
     <section-hero />
     <section-services />
+    <section-works />
 
   </div>
 </template>
