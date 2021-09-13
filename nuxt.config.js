@@ -19,9 +19,9 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   build: {},
-  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", '@nuxtjs/color-mode'],
+  buildModules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxtjs/color-mode"],
   modules: ["@nuxtjs/axios"],
-  plugins: ["~/plugins/webhook"],
+  plugins: ["~/plugins/webhook", { src: "plugins/owl.js", ssr: false }], // Only works on client side,
   content: {},
   components: true,
   googleFonts: {

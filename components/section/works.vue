@@ -1,32 +1,89 @@
 <template>
-  <div id="works" class="font-body bg-white text-black px-4">
-    <div class="py-8 mx-auto lg:max-w-screen-xl">
-      <h1 class="text-5xl font-extrabold pt-12 lg:pt-6"> Works. </h1>
-      <p class="py-8 uppercase font-bold text-primary">THINGS WE'VE MADE</p>
+  <no-ssr>
+    <div id="works" class="font-body bg-white text-black px-4">
+      <div class="py-8 mx-auto lg:max-w-screen-xl">
+        <h1 class="text-5xl font-extrabold pt-12 lg:pt-6"> Works. </h1>
+        <p class="py-8 uppercase font-bold text-primary">THINGS WE'VE MADE</p>
 
-     <div class="relative flex gap-4 lg:flex-row">
-         <div v-for="(image, index) in images" :key="index" class="overflow-hidden">
-         <img class="filter grayscale transform transition duration-300 cursor-pointer hover:scale-110 hover:filter-none" 
-          :src="require(`@/assets/images/works/${image.url}.jpg`)" alt=""/>
-          <p></p>
-         </div>
-     </div>
-      
+        <!-- Carousel mobile -->
+        <carousel class="relative overflow-hidden flex flex-row lg:hidden" :items="1" :autoplay="true">
+          <div v-for="(image, index) in images" :key="index" class="overflow-hidden">
+            <img
+              class="
+                object-cover
+                filter
+                grayscale
+                transform
+                transition
+                duration-300
+                cursor-pointer
+                hover:scale-110
+                hover:filter-none
+              "
+              :src="require(`@/assets/images/works/${image.url}.jpg`)"
+              alt=""
+            />
+          </div>
+        </carousel>
+
+        <!-- Carousel desktop -->
+        <carousel class="hidden relative overflow-hidden lg:flex lg:flex-row" :autoplay="true">
+          <div v-for="(image, index) in images" :key="index" class="overflow-hidden">
+            <img
+              class="
+                object-cover
+                filter
+                grayscale
+                transform
+                transition
+                duration-300
+                cursor-pointer
+                hover:scale-110
+                hover:filter-none
+              "
+              :src="require(`@/assets/images/works/${image.url}.jpg`)"
+              alt=""
+            />
+          </div>
+        </carousel>
+      </div>
     </div>
-  </div>
+  </no-ssr>
 </template>
 
 <script>
 export default {
-    data() {
+  data() {
     return {
       count: 0,
       images: [
         { url: "03-min", text: "Product design" },
         { url: "02-min", text: "Woody" },
         { url: "01-min", text: "Interior design" },
+        { url: "04-min", text: "Electrica" },
+        { url: "05-min", text: "Home design" },
+        { url: "06-min", text: "Biker" }
       ]
     };
-  },
-}
+  }
+};
 </script>
+
+<style>
+.owl-carousel .owl-stage {
+  display: flex;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  margin-top: 1em;
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
+  height: 20em;
+}
+</style>
