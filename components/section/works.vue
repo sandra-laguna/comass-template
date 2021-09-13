@@ -70,6 +70,10 @@ export default {
 </script>
 
 <style>
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #e9204f;
+}
 .owl-carousel .owl-stage {
   display: flex;
 }
