@@ -3,7 +3,7 @@
     <section-hero />
     <section-services />
     <section-works />
-
+    <section-about />
   </div>
 </template>
 
