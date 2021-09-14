@@ -1,9 +1,10 @@
 <template>
   <no-ssr>
     <div id="works" class="font-body bg-white text-black px-4">
-      <div class="py-8 mx-auto lg:max-w-screen-xl">
+      <div class="py-4 mx-auto lg:max-w-screen-xl">
+        <icon-horizontal-line />
         <h1 class="text-5xl font-extrabold pt-12 lg:pt-6"> Works. </h1>
-        <p class="py-8 uppercase font-bold text-primary">THINGS WE'VE MADE</p>
+        <p class="py-4 uppercase font-bold text-primary">THINGS WE'VE MADE</p>
 
         <!-- Carousel mobile -->
         <carousel class="relative overflow-hidden flex flex-row lg:hidden" :items="1" :autoplay="true">

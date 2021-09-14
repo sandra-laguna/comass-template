@@ -3,6 +3,7 @@
     <div class="pt-8 mx-auto flex flex-col-reverse gap-x-12 sm:flex-row sm:max-w-screen-xl xl:gap-x-24 xl:pt-20">
       <img class="sm:h-80 xl:h-auto xl:w-2/5" src="@/assets/images/clients/client_01.jpg" alt="client" />
       <div class="mx-auto xl:w-3/5 xl:py-8">
+        <icon-horizontal-line />
         <h1 class="text-5xl font-extrabold xl:pt-6"> What Clients Say. </h1>
         <p class="pt-8 uppercase font-bold text-primary"> WE'RE MORE THAN A DIGITAL AGENCY </p>
 

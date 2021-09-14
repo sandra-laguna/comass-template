@@ -2,8 +2,11 @@
   <div>
     <section-hero />
     <section-services />
+    <section-separator />
     <section-works />
+    <section-separator />
     <section-about />
+    <section-separator />
     <section-testimonials />
   </div>
 </template>

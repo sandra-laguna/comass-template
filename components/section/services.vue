@@ -1,7 +1,8 @@
 <template>
   <div id="services" class="font-body bg-white text-black px-4">
     <div class="py-8 mx-auto lg:max-w-screen-xl">
-      <h1 class="text-5xl font-extrabold pt-12 lg:pt-28"> Services. </h1>
+      <icon-horizontal-line class="lg:mt-28" />
+      <h1 class="text-5xl font-extrabold pt-12 lg:pt-6"> Services. </h1>
       <p class="py-8 uppercase font-bold text-primary"> We work with you, Not for you </p>
 
       <div class="py-4 font-bold grid grid-col-1 gap-6 lg:py-12 lg:grid-cols-3 lg:grid-rows-3">

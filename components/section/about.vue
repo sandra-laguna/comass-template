@@ -1,9 +1,10 @@
 <template>
   <div id="about" class="font-body bg-white text-black px-4">
-    <div class="py-8 mx-auto lg:max-w-screen-xl">
+    <div class="py-4 mx-auto lg:max-w-screen-xl">
+      <icon-horizontal-line />
       <div class="lg:grid grid-rows-1 grid-cols-2">
         <h1 class="text-5xl font-extrabold pt-12 lg:pt-6"> About. </h1>
-        <p class="py-8 uppercase font-bold text-primary col-start-1"> WE'RE MORE THAN A DIGITAL AGENCY </p>
+        <p class="py-4 uppercase font-bold text-primary col-start-1"> WE'RE MORE THAN A DIGITAL AGENCY </p>
         <p class="col-start-2 text-gray-600">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore corrupti temporibus fuga earum asperiores,
           alias excepturi sit. Impedit, fugit laudantium.
