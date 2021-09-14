@@ -4,6 +4,7 @@
     <section-services />
     <section-works />
     <section-about />
+    <section-testimonials />
   </div>
 </template>
 
