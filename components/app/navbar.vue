@@ -7,24 +7,20 @@
 
       <!-- Desktop -->
       <div class="hidden lg:flex lg:flex-row lg:text-lg">
-        <nuxt-link
-          v-for="(item, i) in itemsMenu"
-          :key="i"
-          class="flex flex-col items-center px-4 py-2 font-black text-md text-white rounded-md hover:bg-primary"
-          :to="item.url"
-        >
-          {{ item.name }}
-        </nuxt-link>
+        <p v-for="(item, i) in itemsMenu" :key="i" class="relative one">
+          <nuxt-link class="flex flex-col items-center px-4 py-2 font-black text-md text-white" :to="item.url">
+            {{ item.name }}
+          </nuxt-link>
+          <span class="absolute bottom-1 left-4 w-0 transition-all duration-300 h-0.5 bg-primary"></span>
+        </p>
       </div>
 
-     
-     <div class="hidden lg:flex lg:flex-row lg:text-lg">
-      <select v-model="$colorMode.preference">
-        <option value="light">Light</option>
-        <option value="dark">Dark</option>
-      </select>
-    </div>
-
+      <div class="hidden lg:flex lg:flex-row lg:text-lg">
+        <select v-model="$colorMode.preference">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
 
       <!-- Mobile -->
       <div class="flex flex-row items-center lg:hidden">
@@ -89,5 +85,12 @@ export default {
   }
 };
 </script>
+
+<style>
+.one:hover span:last-child {
+  width: 30%;
+}
+</style>
+
 
 
