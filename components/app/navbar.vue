@@ -1,5 +1,5 @@
 <template>
-  <nav class="font-body fixed top-0 inset-x-0 z-10 py-4 bg-secondary lg:py-8">
+  <nav class="font-body fixed top-0 inset-x-0 z-10 py-4 bg-secondary opacity-95 lg:py-8">
     <div class="flex items-center justify-between mx-auto px-4 lg:max-w-screen-xl">
       <nuxt-link to="/">
         <img class="h-8" src="@/assets/images/logo.svg" alt="logo" />
