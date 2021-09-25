@@ -62,8 +62,8 @@
   background-image: url("./assets/images/hero_light.png");
   background-color: #fff;
   background-repeat: no-repeat;
-  background-size: 55%;
-  background-position-x: right;
+  background-size: 77%;
+  background-position-x: 7em;
 }
 
 .dark-mode select,
@@ -85,5 +85,24 @@
 
 .btn:hover span {
   transform: translateX(0);
+}
+
+@media (min-width: 640px) {
+  .light-mode #hero {
+    background-size: 50%;
+    background-position-x: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .light-mode #hero {
+    background-size: 55%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .light-mode #hero {
+    background-size: 65%;
+  }
 }
 </style>
