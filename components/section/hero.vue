@@ -26,17 +26,17 @@
     </div>
     <div class="px-4 w-full flex flex-col gap-4 md:mt-20 lg:flex-row">
       <div class="cursor-pointer bg-primary px-12 py-10 lg:py-20">
-        <icon-chart class="h-12 text-white fill-current"/>
+        <icon-chart class="h-12 text-white fill-current" />
         <h2 class="font-extrabold text-2xl my-8">Future Vision.</h2>
         <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
       </div>
       <div class="cursor-pointer bg-secondary px-12 py-10 lg:py-20">
-        <icon-rocket class="h-12 text-white fill-current"/>
+        <icon-rocket class="h-12 text-white fill-current" />
         <h2 class="font-extrabold text-2xl mt-12 mb-8">Product Design.</h2>
         <p>There are many variations of passages of available, but the majority alteration in some form.</p>
       </div>
       <div class="cursor-pointer bg-secondary px-12 py-10 lg:py-20">
-        <icon-pie-chart class="h-12 text-white fill-current"/>
+        <icon-pie-chart class="h-12 text-white fill-current" />
         <h2 class="font-extrabold text-2xl mt-12 mb-8">Inovative Solutions.</h2>
         <p>The generated Lorem Ipsum is therefore always free from repetition, injected humour.</p>
       </div>
@@ -46,19 +46,6 @@
 
 
 <style>
-
-.light-mode #hero {
-  background-image: url("./assets/images/hero_light.png");
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-size: 55%;
-  background-position-x: right;
-  }
-
-.light-mode #hero h1,  .light-mode #hero button, .light-mode select, .dark-mode select{
-  color: #000;
-}
-
 .dark-mode #hero {
   background-image: url("./assets/images/hero.jpg");
   background-repeat: no-repeat;
@@ -66,14 +53,29 @@
   background-position-x: right;
 }
 
-.light-mode body {
-  background-color: #fff;
-  color: #ccc;
-}
-
 .dark-mode body {
   background-color: #000;
   color: #ebf4f1;
+}
+
+.light-mode #hero {
+  background-image: url("./assets/images/hero_light.png");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 55%;
+  background-position-x: right;
+}
+
+.dark-mode select,
+.light-mode #hero h1,
+.light-mode #hero button,
+.light-mode select {
+  color: #000;
+}
+
+.light-mode body {
+  background-color: #fff;
+  color: #ccc;
 }
 
 .btn span:first-child {
@@ -83,6 +85,5 @@
 
 .btn:hover span {
   transform: translateX(0);
-} 
-
+}
 </style>
