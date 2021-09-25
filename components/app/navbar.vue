@@ -20,8 +20,8 @@
 
       <div class="hidden lg:flex lg:flex-row lg:text-lg">
         <select v-model="$colorMode.preference">
-          <option value="light">Light</option>
           <option value="dark">Dark</option>
+          <option value="light">Light</option>
         </select>
       </div>
 
@@ -49,6 +49,10 @@
               class="font-bold mx-4 origin-bottom-right absolute right-0 w-48 border bg-secondary focus:outline-none"
               v-show="isOpen"
             >
+              <select v-model="$colorMode.preference">
+                <option value="dark">Dark</option>
+                <option value="light">Light</option>
+              </select>
               <nuxt-link
                 v-for="(item, i) in itemsMenu"
                 :key="i"
