@@ -8,6 +8,7 @@
     <section-about />
     <section-separator />
     <section-testimonials />
+    <section-letstalk />
   </div>
 </template>
 
