@@ -8,7 +8,10 @@
       <!-- Desktop -->
       <div class="hidden lg:flex lg:flex-row lg:text-lg">
         <p v-for="(item, i) in itemsMenu" :key="i" class="relative one">
-          <nuxt-link class="flex flex-col items-center px-4 py-2 font-black text-md text-white" :to="item.url">
+          <nuxt-link
+            class="flex flex-col items-center px-4 py-2 font-black text-md text-white"
+            :to="{ path: '/', hash: `${item.url}` }"
+          >
             {{ item.name }}
           </nuxt-link>
           <span class="absolute bottom-1 left-4 w-0 transition-all duration-300 h-0.5 bg-primary"></span>
@@ -50,7 +53,7 @@
                 v-for="(item, i) in itemsMenu"
                 :key="i"
                 class="flex flex-col gap-y-4 px-4 py-2 bg-secondaryfont-body text-sm text-white"
-                :to="item.url"
+                :to="{ path: '/', hash: `${item.url}` }"
               >
                 {{ item.name }}
               </nuxt-link>
@@ -69,12 +72,12 @@ export default {
       isOpen: false,
       itemsMenu: [
         { name: "Home", url: "/" },
-        { name: "Services", url: "/services" },
-        { name: "Works", url: "/works" },
-        { name: "About", url: "/about" },
-        { name: "Client", url: "/client" },
-        { name: "Blog", url: "/blog" },
-        { name: "Contact", url: "/contact" }
+        { name: "Services", url: "#services" },
+        { name: "Works", url: "#works" },
+        { name: "About", url: "#about" },
+        { name: "Client", url: "#client" },
+
+        { name: "Contact", url: "#contact" }
       ]
     };
   },

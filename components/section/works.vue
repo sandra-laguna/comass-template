@@ -1,5 +1,5 @@
 <template>
-  <no-ssr>
+  <client-only>
     <div id="works" class="font-body bg-white text-black px-4">
       <div class="py-4 mx-auto lg:max-w-screen-xl">
         <icon-horizontal-line />
@@ -49,7 +49,7 @@
         </carousel>
       </div>
     </div>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>

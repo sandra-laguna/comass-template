@@ -1,5 +1,8 @@
 <template>
-  <div class="relative bg-secondary flex flex-col justify-around items-center py-14 gap-y-6 lg:flex-row lg:py-24">
+  <div
+    id="contact"
+    class="relative bg-secondary flex flex-col justify-around items-center py-14 gap-y-6 lg:flex-row lg:py-24"
+  >
     <div class="flex flex-row gap-x-2 lg:flex-row">
       <icon-facebook
         class="
